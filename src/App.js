@@ -1,23 +1,56 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useEffect, useState } from 'react';
 import './App.css';
+import QRCode from 'qrcode';
+
+const BitcoinQR = ({
+    title,
+    bitcoinAddress,
+    amount,
+    message,
+    time,
+    exp,
+    showHeartDonation
+}) => {
+    const [qrImg, setQrImg] = useState(null);
+    useEffect( () => {
+        QRCode.toDataURL(
+            `bitcoin:${bitcoinAddress}?amount=${amount}&message=${encodeURIComponent(message)}&time=${time}&exp=${exp}`,
+            { errorCorrectionLevel: 'H' }
+        )
+            .then(url => {
+                setQrImg(url);
+            })
+            .catch(err => {
+                console.error(err);
+            })
+    },[]);
+    return (
+       <div>
+           <h5>
+               {title}
+           </h5>
+           <img src={qrImg} alt="QR" />
+           {
+               showHeartDonation && <div className="heart-container"><div className="heart" /></div>
+           }
+       </div>
+    );
+}
 
 function App() {
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+          <BitcoinQR
+            title="Donate Bitcoin"
+            bitcoinAddress="bc1qrg3pxd2vph4pmd5ahevp5xx6vf2pj74xy6sgch"
+            amount={0.1}
+            message="test 001"
+            time={1598656614}
+            exp={86400}
+            showHeartDonation
+          />
       </header>
     </div>
   );
