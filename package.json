@@ -1,5 +1,5 @@
 {
-  "name": "bitcoin-react-js",
+  "name": "@ibunker/bitcoin-react",
   "version": "0.1.0",
   "private": false,
   "dependencies": {
@@ -32,5 +32,22 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "- Create buttons to accept bitcoins via QR codes. - Customize QR codes with a fixed amount to show when scan the client.",
+  "main": "index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IsmaelTerreno/bitcoin-react-js.git"
+  },
+  "keywords": [
+    "bitcoin",
+    "react"
+  ],
+  "author": "IsmaelTerreno",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IsmaelTerreno/bitcoin-react-js/issues"
+  },
+  "homepage": "https://github.com/IsmaelTerreno/bitcoin-react-js#readme"
 }
