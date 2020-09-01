@@ -9,7 +9,7 @@ function App() {
     <div className="App">
       <header className="App-header">
           <BitcoinQR
-            title="Donate Bitcoin Banner"
+            title=""
             bitcoinAddress="bc1qrg3pxd2vph4pmd5ahevp5xx6vf2pj74xy6sgch"
             amount={0.1}
             message="test 001"
