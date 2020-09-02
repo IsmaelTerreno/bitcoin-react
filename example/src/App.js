@@ -5,7 +5,7 @@ import '@ibunker/bitcoin-react/dist/index.css'
 
 const App = () => {
   return <BitcoinQR
-    title="Donate Bitcoin Banner"
+    title="Donate Bitcoin"
     bitcoinAddress="bc1qrg3pxd2vph4pmd5ahevp5xx6vf2pj74xy6sgch"
     amount={0.1}
     message="test 001"
