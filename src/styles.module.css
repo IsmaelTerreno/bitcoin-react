@@ -1,6 +1,7 @@
 .QrSection{
   height: 150px;
-  width: 150px;
+  width: 350px;
+  text-align: center;
 }
 .HeartContainer{
   display: block;
