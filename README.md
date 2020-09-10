@@ -19,18 +19,33 @@ import '@ibunker/bitcoin-react/dist/index.css';
 ```
 
 Later you can use the component like this:
+Use Case for donation:
+```js
+<BitcoinQR
+     amount={0.1}
+     bitcoinAddress="bc1qrg3pxd2vph4pmd5ahevp5xx6vf2pj74xy6sgch"
+     message="Donate bitcoin to support this lib"
+     showHeartDonation
+     title="Donate bitcoin"
+    />
+```
+Use Case for eCommerce:
 
 ```js
 <BitcoinQR
      amount={0.1}
      bitcoinAddress="bc1qrg3pxd2vph4pmd5ahevp5xx6vf2pj74xy6sgch"
-     exp={86400}
-     message="test 001"
-     showHeartDonation
-     time={1598656614}
-     title="Donate bitcoin"
+     message="Specialized Tarmac Pro Mens Road Bike"
+     title="Pro Road Bike"
     />
 ```
+
+Property | Description | type
+------------ | ------------- | -------------
+showHeartDonation | Show a Heart animation under the QR code. | Boolean
+title | Will show a title at the top of the QR code. | String
+message | Will add a message to the QR. | String
+bitcoinAddress | bitcoin address to send the payment. Can be any BTC format address. | String
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
