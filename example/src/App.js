@@ -8,14 +8,14 @@ const App = () => {
     <section className="Qr-section">
       <h3 className="Heading">Example: Send donations to this project</h3>
       <BitcoinQR
-        bitcoinAddress="bc1qrg3pxd2vph4pmd5ahevp5xx6vf2pj74xy6sgch"
+        bitcoinAddress="bc1qr3ja0feke2d7zg8jr0sjhr4aw5ppezt7n954u7"
         message="Donate bitcoin to support this lib"
       />
     </section>
     <section className="Qr-section">
       <h3 className="Heading">Example: Send donations to this project with title</h3>
       <BitcoinQR
-        bitcoinAddress="bc1qrg3pxd2vph4pmd5ahevp5xx6vf2pj74xy6sgch"
+        bitcoinAddress="bc1qr3ja0feke2d7zg8jr0sjhr4aw5ppezt7n954u7"
         message="Donate bitcoin to support this lib"
         title="Donate bitcoin"
       />
@@ -24,7 +24,7 @@ const App = () => {
       <h3 className="Heading">Example: Send <strong className="ClickablePrice">0.1 BTC</strong>  donation to this project</h3>
       <BitcoinQR
         amount={0.1}
-        bitcoinAddress="bc1qrg3pxd2vph4pmd5ahevp5xx6vf2pj74xy6sgch"
+        bitcoinAddress="bc1qr3ja0feke2d7zg8jr0sjhr4aw5ppezt7n954u7"
         message="Donate bitcoin to support this lib"
         title="Donate bitcoin"
       />
@@ -33,7 +33,7 @@ const App = () => {
       <h3 className="Heading">Example: Send <strong className="ClickablePrice">0.1 BTC</strong>  donation to this project with heart animation</h3>
       <BitcoinQR
         amount={0.1}
-        bitcoinAddress="bc1qrg3pxd2vph4pmd5ahevp5xx6vf2pj74xy6sgch"
+        bitcoinAddress="bc1qr3ja0feke2d7zg8jr0sjhr4aw5ppezt7n954u7"
         message="Donate bitcoin to support this lib"
         title="Donate bitcoin"
         showHeartDonation
