@@ -1,11 +1,11 @@
 # Bitcoin Reactjs tool
-##Features
+## Features
 - Create buttons to accept bitcoins via QR codes.
 - Customize QR codes with a fixed amount to show when scan the client.
-##Live Demo
+## Live Demo
 [Go to this site for a quick demo with your wallet.](https://ismaelterreno.github.io/bitcoin-react/)
 
-##How to use the component
+## How to use the component
 Just import the following:
 
 ```js
