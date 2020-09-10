@@ -2,6 +2,7 @@
 ## Features
 - Create buttons to accept bitcoins via QR codes.
 - Customize QR codes with a fixed amount to show when scan the client.
+- Compatibility with any wallet that uses the [Bitcoin URI protocol](https://github.com/bitcoin/bips/blob/master/bip-0021.mediawiki).
 ## Live Demo
 [Go to this site for a quick demo with your wallet.](https://ismaelterreno.github.io/bitcoin-react/)
 
@@ -19,6 +20,7 @@ import '@ibunker/bitcoin-react/dist/index.css';
 ```
 
 Later you can use the component like this:
+
 Use Case for donation:
 ```js
 <BitcoinQR
