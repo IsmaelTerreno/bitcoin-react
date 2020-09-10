@@ -7,6 +7,11 @@
 [Go to this site for a quick demo with your wallet.](https://ismaelterreno.github.io/bitcoin-react/)
 
 ## How to use the component
+Install the package via NPM with the following command:
+
+```shell
+npm i @ibunker/bitcoin-react
+```
 Just import the following:
 
 ```js
@@ -21,25 +26,23 @@ import '@ibunker/bitcoin-react/dist/index.css';
 
 Later you can use the component like this:
 
-Use Case for donation:
+Example: Send donations to this project
 ```js
 <BitcoinQR
-     amount={0.1}
-     bitcoinAddress="bc1qrg3pxd2vph4pmd5ahevp5xx6vf2pj74xy6sgch"
-     message="Donate bitcoin to support this lib"
-     showHeartDonation
-     title="Donate bitcoin"
-    />
+    bitcoinAddress="bc1qrg3pxd2vph4pmd5ahevp5xx6vf2pj74xy6sgch"
+    message="Donate bitcoin to support this lib"
+    title="Donate bitcoin"
+/>
 ```
-Use Case for eCommerce:
+Example: Send 0.1 BTC donation to this project
 
 ```js
 <BitcoinQR
-     amount={0.1}
-     bitcoinAddress="bc1qrg3pxd2vph4pmd5ahevp5xx6vf2pj74xy6sgch"
-     message="Specialized Tarmac Pro Mens Road Bike"
-     title="Pro Road Bike"
-    />
+    amount={0.1}
+    bitcoinAddress="bc1qrg3pxd2vph4pmd5ahevp5xx6vf2pj74xy6sgch"
+    message="Donate bitcoin to support this lib"
+    title="Donate bitcoin"
+/>
 ```
 
 Property | Description | type

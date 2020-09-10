@@ -12,3 +12,18 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.Container{
+  display: flex;
+  flex-direction: column;
+}
+.Qr-section{
+  height: 400px;
+  display: block;
+}
+.Heading {
+  color: #357ebd;
+}
+
+.Price {
+  border-bottom: 1px #888 dashed;
+}
