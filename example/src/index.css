@@ -15,9 +15,12 @@ code {
 .Container{
   display: flex;
   flex-direction: column;
+  width: 500px;
+  margin: 0 auto;
 }
 .Qr-section{
   height: 400px;
+  width: 500px;
   display: block;
 }
 .Heading {
@@ -26,4 +29,8 @@ code {
 
 .Price {
   border-bottom: 1px #888 dashed;
+}
+
+.Logo{
+  margin: 100px;
 }

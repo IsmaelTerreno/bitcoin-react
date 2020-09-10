@@ -1,10 +1,13 @@
 import React from 'react'
-
+import logo from './images/btc-logo.png';
 import { BitcoinQR } from '@ibunker/bitcoin-react'
 import '@ibunker/bitcoin-react/dist/index.css'
 
 const App = () => {
   return <div className="Container">
+    <section className="Qr-section">
+      <img className="Logo" src={logo} alt="Bitcoin Logo" height={200}/>
+    </section>
     <section className="Qr-section">
       <h3 className="Heading">Example: Send donations to this project</h3>
       <BitcoinQR
