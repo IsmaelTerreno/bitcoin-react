@@ -6,11 +6,10 @@ import '@ibunker/bitcoin-react/dist/index.css'
 const App = () => {
   return <BitcoinQR
     title="Donate Bitcoin"
-    bitcoinAddress="bc1qrg3pxd2vph4pmd5ahevp5xx6vf2pj74xy6sgch"
-    amount={0.1}
-    message="test 001"
-    time={1598656614}
-    exp={86400}
+    bitcoinAddress="bc1qr3ja0feke2d7zg8jr0sjhr4aw5ppezt7n954u7"
+    amount={0}
+    message="Donate to Bitcoin React"
+    time={1599696746}
     showHeartDonation
   />;
 }
