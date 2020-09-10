@@ -29,7 +29,7 @@ Later you can use the component like this:
 Example: Send donations to this project
 ```js
 <BitcoinQR
-    bitcoinAddress="bc1qrg3pxd2vph4pmd5ahevp5xx6vf2pj74xy6sgch"
+    bitcoinAddress="bc1qr3ja0feke2d7zg8jr0sjhr4aw5ppezt7n954u7"
     message="Donate bitcoin to support this lib"
     title="Donate bitcoin"
 />
@@ -39,7 +39,7 @@ Example: Send 0.1 BTC donation to this project
 ```js
 <BitcoinQR
     amount={0.1}
-    bitcoinAddress="bc1qrg3pxd2vph4pmd5ahevp5xx6vf2pj74xy6sgch"
+    bitcoinAddress="bc1qr3ja0feke2d7zg8jr0sjhr4aw5ppezt7n954u7"
     message="Donate bitcoin to support this lib"
     title="Donate bitcoin"
 />
