@@ -1,6 +1,6 @@
 {
   "name": "@ibunker/bitcoin-react",
-  "version": "0.1.7cd",
+  "version": "0.1.8cd",
   "private": false,
   "description": "- Create buttons to accept bitcoins via QR codes. - Customize QR codes with a fixed amount to show when scan the client.",
   "author": "IsmaelTerreno",
