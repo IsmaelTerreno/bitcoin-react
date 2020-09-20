@@ -1,6 +1,6 @@
 # Bitcoin Reactjs tool
 ## Features
-- Create buttons to accept bitcoins via QR codes.
+- Create buttons to accept bitcoins via QR code scanner.
 - Customize QR codes with a fixed amount to show when scan the client.
 - Compatibility with any wallet that uses the [Bitcoin URI protocol](https://github.com/bitcoin/bips/blob/master/bip-0021.mediawiki).
 ## Live Demo
