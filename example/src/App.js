@@ -4,7 +4,8 @@ import logo from './images/btc-logo.png';
 import { BitcoinQR } from '@ibunker/bitcoin-react'
 import '@ibunker/bitcoin-react/dist/index.css'
 import { makeStyles } from '@material-ui/core/styles';
-import { Paper, Grid, Divider, Typography, Tabs, Tab, Box } from '@material-ui/core';
+import GitHubIcon from '@material-ui/icons/GitHub';
+import { Paper, Grid, Divider, Typography, Tabs, Tab, Button, Icon } from '@material-ui/core';
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -47,9 +48,6 @@ const useStyles = makeStyles((theme) => ({
     color: theme.palette.text.secondary,
     height:'600px'
   },
-  tabs: {
-    borderRight: `1px solid ${theme.palette.divider}`,
-  },
 }));
 
 const App = () => {
@@ -81,9 +79,30 @@ const App = () => {
           <img className="Logo" src={logo} alt="Bitcoin Logo" height={200}/>
         </Grid>
         <Grid item>
-          <Typography variant="h5" gutterBottom align="center">
-            Showcases Demo
-          </Typography>
+          <Button
+            variant="contained"
+            color="primary"
+            className={classes.button}
+            startIcon={<GitHubIcon />}
+            href="https://github.com/IsmaelTerreno/bitcoin-react"
+          >
+            View on Github
+          </Button>
+        </Grid>
+        <Grid item >
+          <Tabs
+            orientation="horizontal"
+            variant="scrollable"
+            value={value}
+            onChange={handleChange}
+            aria-label="Showcases"
+          >
+            <Tab label="QR code only" {...a11yProps(0)} />
+            <Tab label="With title" {...a11yProps(1)} />
+            <Tab label="Custom Amount" {...a11yProps(2)} />
+            <Tab label="Heart Animation" {...a11yProps(3)} />
+            <Tab label="Donate bitcoin to support this project" {...a11yProps(4)} />
+          </Tabs>
         </Grid>
       </Grid>
       <Divider />
@@ -94,31 +113,15 @@ const App = () => {
         alignItems="center"
         spacing={0}
       >
-        <Grid item xs={2}>
-          <Tabs
-            orientation="vertical"
-            variant="scrollable"
-            value={value}
-            onChange={handleChange}
-            aria-label="Showcases"
-            className={classes.tabs}
-          >
-            <Tab label="QR code only" {...a11yProps(0)} />
-            <Tab label="With title" {...a11yProps(1)} />
-            <Tab label="Custom Amount" {...a11yProps(2)} />
-            <Tab label="Heart Animation" {...a11yProps(3)} />
-            <Tab label="Donate bitcoin to support this project" {...a11yProps(4)} />
-          </Tabs>
-        </Grid>
-        <Grid item xs={10}>
+        <Grid item xs={12}>
           <TabPanel value={value} index={0}>
             <Paper className={classes.paper}>
               <Typography variant="h5" gutterBottom>
-                Send payment
+                Qr code only
               </Typography>
               <BitcoinQR
                 bitcoinAddress="bc1qr3ja0feke2d7zg8jr0sjhr4aw5ppezt7n954u7"
-                message="Donate bitcoin to support this lib"
+                message="Donate bitcoin to support this project"
               />
             </Paper>
           </TabPanel>
@@ -129,7 +132,7 @@ const App = () => {
               </Typography>
               <BitcoinQR
                 bitcoinAddress="bc1qr3ja0feke2d7zg8jr0sjhr4aw5ppezt7n954u7"
-                message="Donate bitcoin to support this lib"
+                message="Donate bitcoin to support this project"
                 title="Donate bitcoin"
               />
             </Paper>
@@ -142,19 +145,19 @@ const App = () => {
               <BitcoinQR
                 amount={0.1}
                 bitcoinAddress="bc1qr3ja0feke2d7zg8jr0sjhr4aw5ppezt7n954u7"
-                message="Donate bitcoin to support this lib"
+                message="Donate bitcoin to support this project"
               />
             </Paper>
           </TabPanel>
           <TabPanel value={value} index={3}>
             <Paper className={classes.paper}>
               <Typography variant="h5" gutterBottom>
-                Qr code with heart animation
+                Heart animation
               </Typography>
               <BitcoinQR
                 amount={0.1}
                 bitcoinAddress="bc1qr3ja0feke2d7zg8jr0sjhr4aw5ppezt7n954u7"
-                message="Donate bitcoin to support this lib"
+                message="Donate bitcoin to support this project"
                 showHeartDonation
               />
             </Paper>
@@ -167,8 +170,7 @@ const App = () => {
               <BitcoinQR
                 amount={0.1}
                 bitcoinAddress="bc1qr3ja0feke2d7zg8jr0sjhr4aw5ppezt7n954u7"
-                message="Donate bitcoin to support this lib"
-                title="Donate bitcoin"
+                message="Donate bitcoin to support this project"
                 showHeartDonation
               />
             </Paper>
