@@ -55,6 +55,8 @@ bitcoinAddress | bitcoin address to send the payment. Can be any BTC format addr
 ## How to quick donate to this project
 Did this help you in anything useful? or Do you feel that it is your lucky day and you are generous? consider donating to the author to support this project. Use your favorite wallet!  ;)
 
+Please send DONATIONS for this project to Bitcoin Address: bc1qr3ja0feke2d7zg8jr0sjhr4aw5ppezt7n954u7
+
 ![Donate bitcoin to support this project :D bc1qr3ja0feke2d7zg8jr0sjhr4aw5ppezt7n954u7](https://github.com/IsmaelTerreno/bitcoin-react/blob/master/src/donate-to-project.png?raw=true)
 
 
